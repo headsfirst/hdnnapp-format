@@ -1,22 +1,28 @@
-*This document describes the format of HDNN Apps, single-file applications that can run on an HDNN Simulator.*
+*This document describes the format of HDNN Apps, single-file applications that can run on the HDNN Simulator.*
 
 HDNN Apps are [SQLite](https://www.sqlite.org/) databases that adhere to the following content specification:
 
 ```CREATE TABLE GenericEntity (type STRING, id STRING, name STRING, status STRING, properties STRING)```
 
 , where the 'type' field can take these values: 
+* 'Sim'
 * 'Node'
-* 'Process'
+* 'Switch'
 * 'Bridge'
+* 'Process'
 * 'Connection'
+* 'SimModel'
 * 'NodeModel'
-* 'ProcessModel'
+* 'SwitchModel'
 * 'BridgeModel'
+* 'ProcessModel'
 * 'ConnectionModel'
 
-and the 'status' field can take these values: 
+, the 'status' field can take these values: 
 * 'a' (active)
 * 'i' (inactive)
+
+and the 'properties' field contains a JSON string defining name-value pairs.
 
 
 ```CREATE TABLE GenericRelation (entity1_id STRING, entity2_id STRING, dimension STRING, quantity FLOAT)```
@@ -26,3 +32,6 @@ and the 'status' field can take these values:
 * 'p' (parent)
 * 'i' (input)
 * 'o' (output)
+
+
+The general rule is that entity records have a parent ('p') relation to their respective model record, for instance a Process has a ProcessModel parent. The model name serves as the class name for the entity. Hence, which model names are supported depends on the (version of the) HDNN simulator.
