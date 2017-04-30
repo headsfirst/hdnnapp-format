@@ -34,4 +34,4 @@ and the 'properties' field contains a JSON string defining name-value pairs.
 * 'o' (output)
 
 
-The general rule is that entity records have a parent ('p') relation to their respective model record, for instance a Process has a ProcessModel parent. The model name serves as the class name for the entity. Hence, which model names are supported depends on the (version of the) HDNN simulator.
+The general rule is that entity records have a model ('m') relation to their respective model record, for instance a Process has a ProcessModel parent. The model name serves as the class name for the entity. Hence, which model names are supported depends on the (version of the) HDNN simulator.
