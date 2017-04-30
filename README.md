@@ -38,4 +38,4 @@ The general rule is that entity records have a model ('m') relation to their res
 
 Nodes can have multiple input ('i') relations to other Nodes or to Connections. Here, the 'quantity' field serves as the connection weight.  
 
-Connections should have a single parent ('p') relation to a Node.  
+Connections should have a single parent ('p') relation to a Node, whereas Nodes, Bridges and Processes should each have a single parent ('p') relation to a Switch.  
