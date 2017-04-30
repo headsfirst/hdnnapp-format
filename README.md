@@ -35,5 +35,7 @@ and the 'properties' field contains a JSON string defining name-value pairs.
 
 
 The general rule is that entity records have a model ('m') relation to their respective model record, for instance a Process has one ProcessModel as its model. The model name serves as the class name for the entity. Hence, which model names are supported depends on the (version of the) HDNN simulator.  
-Nodes can have multiple input ('i') relations to other Nodes or to Connections. Here, the 'quantity' field serves as the connection weight, allowing values between 0.0 and 1.0 .  
+
+Nodes can have multiple input ('i') relations to other Nodes or to Connections. Here, the 'quantity' field serves as the connection weight.  
+
 Connections should have a single parent ('p') relation to a Node.  
