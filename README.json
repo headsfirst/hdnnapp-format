@@ -1,0 +1,8 @@
+{
+    "@context": "http://schema.org",
+    "@id": "#hdnnapp-format",
+    "@type": "ProductModel",
+    "description": "High-Definition Neural Network Application - format",
+    "name": "hdnnapp-format"
+    "url": "https://headsfirst.github.io/hdnnapp-format/"
+}
