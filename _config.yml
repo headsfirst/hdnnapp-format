@@ -1,1 +1,6 @@
 theme: jekyll-theme-slate
+
+title: hdnnapp-format
+description: High-Definition Neural Network Application - Format
+show_downloads: "false"
+google_analytics: UA-109812385-1
