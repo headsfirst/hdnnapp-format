@@ -1,3 +1,14 @@
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@id": "#hdnnapp-format",
+      "@type": "ProductModel",
+      "description": "High-Definition Neural Network Application - format",
+      "name": "hdnnapp-format"
+      "url": "https://headsfirst.github.io/hdnnapp-format/"
+    }
+    </script>
+
 *This document describes the format of HDNN Apps, single-file applications that can run on the HDNN Simulator.*
 
 HDNN Apps are [SQLite](https://www.sqlite.org/) databases that adhere to the following content specification:
