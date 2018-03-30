@@ -2,6 +2,7 @@
 
 HDNN Apps are [SQLite](https://www.sqlite.org/) databases that adhere to the following content specification:
 
+## Entities ##
 ```CREATE TABLE GenericEntity (type STRING, id STRING, name STRING, status STRING, properties STRING)```
 
 , where the 'type' field can take these values: 
@@ -25,6 +26,7 @@ HDNN Apps are [SQLite](https://www.sqlite.org/) databases that adhere to the fol
 and the 'properties' field contains a JSON string defining name-value pairs.
 
 
+## Relations ##
 ```CREATE TABLE GenericRelation (entity1_id STRING, entity2_id STRING, dimension STRING, quantity FLOAT)```
 
 ,where the 'dimension' field can take these values:
